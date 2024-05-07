@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <script src="js/eventos.js"></script>
+</head>
+<body>
+    <h1>Ejemplo de eventos con JS</h1>
+    <p id="eventoSeleccionado">
+
+    </p>
+    <p onclick="hacerClic()">Clic aqui</p>
+    <p ondblclick="hacerDobleClic()">Doble clic</p>
+    <p onmousemove="moverMouse()">Mover el mouse</p>
+    <h2 onmousedown="presionarBotonMouse()" onmouseup="soltarBotonMouse()">Presionar boton del mouse</h2>
+    <div onclick="escribirAqui(this)">estoy aqui</div>
+    <h3 onclick="escribirAqui(this)">titulo 3</h3>
+    <input type="number" name="txtValor1" id="txtValor1">
+    <input type="number" name="txtValor2" id="txtValor2">
+    <section onmouseover="sumarp(
+        parseFloat(document.getElementById('txtValor1').value),
+        parseFloat(document.getElementById('txtValor2').value),
+        this
+        )">
+        Mostrar resultado de suma
+    </section>
+    <input type="text" id="txtMensaje" onkeydown="presionarEnter(event,this)">
+</body>
+</html>

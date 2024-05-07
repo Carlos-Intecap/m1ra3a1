@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Problema 13</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+      }
+    </style>
+    <script src="js/problema13.js"></script>
+  </head>
+  <body>
+    <div class="container col-4">
+        <header class="text-center">
+            <h1>Problema 13</h1>
+            <h4>Caracteres de dos textos</h4>
+        </header>
+        <main>
+            <form>
+                <div class="mb-3">
+                    <label for="txtTexto1" class="form-label">Texto 1</label>
+                    <input type="text" class="form-control" id="txtTexto1" placeholder="Ingrese el primer texto">
+                  </div>
+                  <div class="mb-3">
+                    <label for="txtTexto2" class="form-label">Texto 2</label>
+                    <input type="text" class="form-control" id="txtTexto2" placeholder="Ingrese el segundo texto">
+                  </div>
+                  <div class="container text-center">
+                    <button type="button" onclick="cantCaracteres()" class="btn btn-primary">Cantidad de caracteres</button>
+                    <button type="button" onclick="cantLetraS()" class="btn btn-primary">Letra S</button>
+                    <button type="button" onclick="cantPares()" class="btn btn-primary">Caracteres</button>
+                </div>
+            </form>
+            <div id="tablaContainer"></div>
+        </main>
+        <div class="container text-center"><a href="index.html"><button type="button" class="btn btn-dark">Volver</button></a></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
